@@ -36,6 +36,8 @@ console.log(ul)
 console.log(li)
 
 // в шестой книге добавить главу “Глава 8: За пределами ES6” и поставить её в правильное место
-const cloneEleme =  li[25].cloneNode()
-cloneEleme.textContent = 'Глава 8: За пределами ES6'
-li[25].after(cloneEleme)
+const newLi = document.createElement('li')
+newLi.textContent = 'Глава 8: За пределами ES6'
+ul[2].append(newLi)
+li[25].after(newLi)
+console.log(newLi)
